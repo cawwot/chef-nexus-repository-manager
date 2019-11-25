@@ -20,14 +20,14 @@ default['nexus_repository_manager']['hazelcast']['tcp_ip']['members'] = ['127.0.
 # aws configuration
 default['nexus_repository_manager']['hazelcast']['aws']['enabled'] = false
 default['nexus_repository_manager']['hazelcast']['aws']['iam_role'] = ''
-default['nexus_repository_manager']['hazelcast']['aws']['region'] = 'us-east-1'
+default['nexus_repository_manager']['hazelcast']['aws']['region'] = 'us-gov-west-1'
 default['nexus_repository_manager']['hazelcast']['aws']['tag_key'] = 'Platform'
 default['nexus_repository_manager']['hazelcast']['aws']['tag_value'] = 'nexus-repository-manager'
 
 # hazelcast discovery configuration
 default['nexus_repository_manager']['hazelcast']['discovery']['enabled'] = false
 default['nexus_repository_manager']['hazelcast']['discovery']['iam_role'] = ''
-default['nexus_repository_manager']['hazelcast']['discovery']['region'] = 'us-east-1'
+default['nexus_repository_manager']['hazelcast']['discovery']['region'] = 'us-gov-west-1'
 default['nexus_repository_manager']['hazelcast']['discovery']['tag_key'] = 'Platform'
 default['nexus_repository_manager']['hazelcast']['discovery']['security_group_name'] = ''
 default['nexus_repository_manager']['hazelcast']['discovery']['tag_value'] = 'nexus-repository-manager'
