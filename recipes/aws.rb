@@ -69,6 +69,13 @@ template '/etc/awslogs/nexus.conf' do
   mode '0644'
 end
 
+bash 'get and install pip' do
+  code <<-EOH
+    rpm -ivh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+    yum install python-pip -y
+  EOH
+end
+
 python_package 'awscli'
 
 python_package 'awscli-cwlogs'
